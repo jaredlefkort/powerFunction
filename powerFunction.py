@@ -5,7 +5,7 @@ def power(base, exponent):
 
 	answer = base
 	counter = 1
-	while exponent > counter:
+	while exponent > counter:	
 		counter += 1
 		answer = answer * base
 
@@ -14,6 +14,10 @@ def power(base, exponent):
 base = int(input("Type a base number. "))
 exponent = int(input("Type an exponent. "))
 
-answer = power(base, exponent)
+if exponent == 0:
+	answer = 1
+	print("The answer is {}.".format(answer))
 
-print("The answer is {}.".format(answer))
+else:
+	answer = power(base, exponent)
+	print("The answer is {}.".format(answer))
