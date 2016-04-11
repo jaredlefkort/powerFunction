@@ -43,17 +43,3 @@ def float_input(question):
 	
 	except ValueError:
 		return float_input("That was not a float, try again. ")
-#-----------------------------Main Program---------------------------
-
-
-base = float_input("Type a base number. ")
-exponent = int_input("Type an exponent. ")
-
-if exponent == 0:
-	answer = 1
-	print("The answer is {}.".format(answer))
-
-else:
-	answer = power(base, exponent)
-	print("The answer is {}.".format(answer))
-	
