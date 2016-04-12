@@ -3,10 +3,10 @@
 
 def power(base, exponent):
 
-	zero = "1"
+	one = "1"
 	
 	if exponent < 1:
-		return zero
+		return one
 	
 	if exponent == 1:
 		return base
